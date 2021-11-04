@@ -32,8 +32,8 @@ namespace ScanUtil
                             if (File.Exists(fileName))
                             {
                                 string text = File.ReadAllText(fileName);
-                                string[] split_fileName = fileName.Split('.');
-                                if (split_fileName[^1] == "js")   //check is file a js file
+                                string extension = Path.GetExtension(fileName);
+                                if (extension == ".js")   //check is file a js file
                                 {
                                     if (text.Contains(sample1))   //check if file contains a string "<script>exile_script()</script>"
                                     {

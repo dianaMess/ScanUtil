@@ -9,7 +9,7 @@ namespace ScanUtil
     {
         static void Main(string[] args)
         {
-            if (args.Length == 0)
+            if (args.Length == 0)   //check if path wasn't given in command line
             {
                 Console.WriteLine("Path is not given");
             }
